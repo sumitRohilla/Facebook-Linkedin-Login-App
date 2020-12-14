@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F5F5"
+    tools:context="LoginActivity">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Authentication App"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:fontFamily="@font/montserrat"
+        android:textSize="30sp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </TextView>
+
+    <View
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".75"
+        android:background="@drawable/main_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_name">
+        </View>
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/login_logo"
+        app:layout_constraintTop_toBottomOf="@id/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_view"
+        app:layout_constraintVertical_bias=".3">
+    </ImageView>
+
+    <View
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/login_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </View>
+
+    <TextView
+        android:id="@+id/login_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login With :"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#1BA7DD"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintTop_toTopOf="@id/login_view"
+        app:layout_constraintStart_toStartOf="@id/login_view"
+        app:layout_constraintEnd_toEndOf="@id/login_view">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/login_button_fb"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="#35CAEC"
+        android:fontFamily="@font/montserrat"
+        android:text="FACEBOOK"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:backgroundTint="#35CAEC"
+        app:layout_constraintEnd_toEndOf="@id/login_view"
+        app:layout_constraintStart_toStartOf="@id/login_view"
+        app:layout_constraintTop_toBottomOf="@id/login_with">
+    </Button>
+
+    <Button
+        android:id="@+id/login_button_ln"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="#35CAEC"
+        android:fontFamily="@font/montserrat"
+        android:text="LINKED IN"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:backgroundTint="#35CAEC"
+        app:layout_constraintEnd_toEndOf="@id/login_view"
+        app:layout_constraintStart_toStartOf="@id/login_view"
+        app:layout_constraintTop_toBottomOf="@id/login_button_fb">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
